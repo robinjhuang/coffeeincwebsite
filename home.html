@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head> 
+<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+<link type="text/css" rel="stylesheet" href="css/normalize.css">
+
+<!-- GOOGLE FONTS-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- THIS IS THE SCRIPT FOR CHANGING THE DOWNLOAD BUTTON IMAGE-->
+ 
+   <script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "img/button.png") 
+        {
+            document.getElementById("imgClickAndChange").src = "img/applestoredownload.png";
+        }
+        
+    }
+</script>
+
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+<!--THIS IS THE SCRIPT THAT CONTROLS EVERYTHING -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: false,
+        auto: true,
+        controls: false,
+        startslide: 0,
+        autoControls: false,
+        speed: 1200,
+
+        pager: true
+    });
+  });</script>
+
+<script>
+
+$(document).ready(function() {
+    $('#slick-toggle').click(function() {
+        if (!$(this).hasClass('follow-href')) {
+            var $img = $(this).find("img");
+            var src = ($img.attr('src') == 'img/button.png') ? 'img/applestoredownload.png' : 'img/button.png';
+            $img.attr('src', src);
+            $(this).addClass('follow-href');
+            $('#slickbox').toggle(400);
+            return false;
+        }
+    });
+});
+</script>
+ 
+<title>Coffee</title>
+</head>
+
+<body>
+
+<div id="main">
+	<div class="outer-container"> 
+		<div class="co-center-container"> 
+			<div class="co-intro-col">
+				<h1 class="co-logo">
+					<span><img class="logojpg" src="img/logo.jpg"></span>
+				</h1>
+				<h2 class="hidden-xs">Connecting the NEXT Generation of Professionals</h2>
+
+				<div class="co-download-app"> 
+					<div class="wrapper">
+					<div id="imageContainer">
+						<a href="https://itunes.apple.com/us/app/coffee-make-connections/id844797797?mt=8" id="slick-toggle">
+							<img src="img/button.png"/>
+						</a>
+											</div>
+					</div>
+				</div>		
+				<div class="instagram"> Find Us On <a href="http://instagram.com/coffeetheapp"> <img class="instagramlogo" src="img/Instagram_Icon_Large.png"><strong> #CoffeetheApp</strong></a>  </div>
+			</div> <!-- co-intro-col-->
+
+
+			<div class="co-animation">
+				<div class="co-animation-phone">
+					<div class="co-animation-cards-container"> 
+						<div class="bx-wrapper">
+						<ul class="bxslider">	
+							<li><img id="pics" src="img/5-1.png"></li>	
+							<li><img id="pics" src="img/5-2.png"></li>
+							<li><img id="pics" src="img/5-3.png"></li>
+							<!-- <li><img id="pics" src="img/notificationpage.jpg"></li> -->
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+		<!-- <div class="co-footer">
+
+		<div class="container"> 
+			<div class="navbar">
+
+				<ul class="menu nav navbar-nav"> 
+					<li><a ng-href="/about" href="about/about copy.html">About</a></li>
+					<li><a ng-href="/press" href="/press">Press</a></li>
+					<li><a ng-href="/jobs" href="jobs/jobs.html">Jobs</a></li>
+					<li><a ng-href="/faq" href="/faq">FAQ</a></li>
+					<li><a ng-href="/privacy" href="/privacy">Privacy</a></li>
+					<li><a ng-href="/terms" href="/terms">Terms</a></li>
+				</ul>
+			</div>
+		</div>
+		</div> -->
+	</div>
+
+
+
+
+ <a class = "temp" href="about/about.html">About</a>
+</body>
+
+</html>

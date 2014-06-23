@@ -1,0 +1,265 @@
+
+* {
+	font-family: gotham, 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	-webkit box sizing: border-box;
+	-moz box sizing: border-box;
+
+}
+html {
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: gotham, 'Open Sans', sans-serif;
+	height: 490px;
+	width: 1274px;
+}
+
+body a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div {
+	display: block;
+	background-color: white;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#main {
+	height: 688px;
+	width: 1274px;
+	background-color: white; /* green*/
+	margin: auto;
+}
+.outer-container {
+	width: 730px;
+	height: 675px;
+	margin: 0 auto;
+	background-color: white; /*blue*/
+}
+
+.co-center-container {
+	width: 775px;
+	height: 653px;
+	margin:0 auto;
+	background-color: white; /* red*/
+	
+}
+
+.co-intro-col {
+	margin: auto;
+	float: left;
+	width: 330px;
+	height: 330px;
+	background-color: white; /*purple*/
+}
+
+.co-center-container .co-intro-col  {
+	margin: auto;
+	padding: 0;
+	margin-top: 238px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.co-center-container .co-intro-col h1 {
+	margin: auto;
+	margin-bottom: 6px;
+}
+
+
+
+.co-logo {
+	margin-top: 22px;
+	display: block;
+	width: 256px !important;
+	height: 62px !important;
+	background: url('img/logo.png') no-repeat -318px -145px;
+}
+
+img.logojpg {
+	width: 256px;
+	height: 62px;
+}
+
+.co-center-container .co-intro-col > * {
+float: right;
+}
+
+.co-center-container .co-intro-col h2 {
+	color: rgb(160, 160, 160);
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.co-center-container .co-download-app {
+position: relative;
+width: 100%;
+height: 66px;
+}
+
+.hidden-xs {
+	text-align: right;
+}
+
+.co-download-app {
+text-align: right;
+background-color: white; /* purple*/
+position: absolute;
+cursor: pointer;
+}
+
+.instagram {
+	text-align: right;
+	font-size: 20px;
+	color: #49c359;
+}
+
+.instagramlogo {
+	padding-top: 5px;
+	width: 10%;
+	height: 10%;
+	margin-left: 1px;
+	margin-right: 1px;
+	color: #49c359;
+}
+
+.instagram strong {
+	color: #49c359;
+}
+
+.co-animation-phone {
+	margin: auto;
+	width: 316px;
+	height: 653px;
+	background-color: white; /*black*/
+	margin-right: 70px;
+	
+}
+.co-animation-cards-container {
+position: relative;
+width: 316px;
+height: 653px;
+padding-top: 50px;
+
+}
+
+#pics {
+	width: 295px;
+	border: 0;
+}
+
+.bx-wrapper .bx-viewport {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+.bx-pager {
+	margin-left: 35px;
+}
+
+.footer {
+	margin: 0 auto;
+	width: 1274px;
+	height: 55px;
+	background-color: white; /* yellow*/
+}
+
+.container {
+	width: 730px;
+}
+.navbar {
+	margin-bottom: 0;
+	border-radius: 4px;
+	position: relative;
+	min-height: 50px;
+	border: 1px solid transparent;
+}
+
+ul, menu {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+.navbar-nav > li {
+	float: left;
+}
+.nav > li {
+	position: relative;
+	display: block;
+}
+
+.co-footer {
+	height: 55px;
+	margin-top: 15px;
+	/* This is how I moved the menu bar down to fit */
+}
+
+.container {
+	width: 730px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.co-footer .navbar {
+	margin-bottom: 0px;
+}
+
+.navbar {
+	border-radius: 4px;
+	position: relative;
+	min-height: 50px;
+	border: 1px solid transparent;
+}
+
+.navbar-nav {
+	float: left;
+}
+
+.nav {
+	list-style: none;
+}
+
+.menu li {
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.menu a {
+	background: transparent;
+	color: #d4d4d4;
+	font-weight: 500;
+}
+
+a.temp {
+	float: right;
+	width: 100%;
+	margin-left: 50%;
+	display: inline;
+	color: rgb(172, 213, 160);
+	font-weight: 300;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
