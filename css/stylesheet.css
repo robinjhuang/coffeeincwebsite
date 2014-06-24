@@ -246,9 +246,11 @@ ul, menu {
 	font-weight: 500;
 }
 
+.temporary {
+	text-align: center;
+}
+
 a.temp {
-	float: right;
-	width: 100%;
 	margin-left: 50%;
 	display: inline;
 	color: rgb(172, 213, 160);
