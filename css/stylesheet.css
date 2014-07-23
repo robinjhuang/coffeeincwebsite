@@ -10,8 +10,7 @@ html {
 	font-size: 62.5%;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	font-family: gotham, 'Open Sans', sans-serif;
-	height: 490px;
-	width: 1274px;
+	
 }
 
 body a {
@@ -26,50 +25,21 @@ div {
 	padding-right: 0px;
 }
 
-#main {
-	height: 688px;
-	width: 1274px;
-	background-color: white; /* green*/
-	margin: auto;
-}
-.outer-container {
-	width: 730px;
-	height: 675px;
-	margin: 0 auto;
-	background-color: white; /*blue*/
-}
-
 .co-center-container {
-	width: 775px;
-	height: 653px;
 	margin:0 auto;
 	background-color: white; /* red*/
-	
-}
-
-.co-intro-col {
-	margin: auto;
-	float: left;
-	width: 330px;
-	height: 330px;
-	background-color: white; /*purple*/
 }
 
 .co-center-container .co-intro-col  {
-	margin: auto;
 	padding: 0;
-	margin-top: 238px;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-top: 18.67%;
 }
+
+
 
 .co-center-container .co-intro-col h1 {
-	margin: auto;
 	margin-bottom: 6px;
 }
-
-
-
 .co-logo {
 	margin-top: 22px;
 	display: block;
@@ -83,7 +53,12 @@ img.logojpg {
 	height: 62px;
 }
 
-.co-center-container .co-intro-col > * {
+.co-xs-12 {
+	float: none;
+	text-align: center;
+}
+
+.co-center-container .col-sm-3 > * {
 float: right;
 }
 
@@ -94,6 +69,7 @@ float: right;
 	margin-top: 5px;
 	line-height: 36px;
 	font-weight: bold;
+	text-align: right;
 }
 
 .co-center-container .co-download-app {
@@ -102,9 +78,6 @@ width: 100%;
 height: 66px;
 }
 
-.hidden-xs {
-	text-align: right;
-}
 
 .co-download-app {
 text-align: right;
@@ -132,20 +105,28 @@ cursor: pointer;
 	color: #49c359;
 }
 
-.co-animation-phone {
-	margin: auto;
-	width: 316px;
-	height: 653px;
-	background-color: white; /*black*/
-	margin-right: 70px;
-	
+.instagram a {
+	text-decoration: none;
 }
-.co-animation-cards-container {
-position: relative;
-width: 316px;
-height: 653px;
-padding-top: 50px;
 
+.co-animation {
+	
+	margin-top: 40px;
+	padding: 0px;
+	margin-left: 4%;
+	}
+
+.co-animation .item > img {
+	width: 100%;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
 }
 
 #pics {
@@ -247,6 +228,7 @@ ul, menu {
 }
 
 .temporary {
+	margin-top: 6%;
 	text-align: center;
 }
 
@@ -263,5 +245,70 @@ a.temp {
 	padding-left: 30px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	text-decoration: none;
 }
 
+
+@media only screen and (max-width: 901px) {
+
+	a {
+		text-decoration: none;
+	}
+
+	.co-center-container .co-intro-col {
+		text-align: center;
+	}
+
+	
+	.co-center-container .col-sm-3 > * {
+		float: none;
+		margin: 0 auto;
+	}
+
+	#connect {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	#imageContainer {
+		margin: 0 auto;
+	}
+
+	.co-center-container .co-download-app {
+		position: relative;
+		width: 100%;
+		height: 66px;
+		margin-top: 5;
+		text-align: center;	
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.co-center-container .co-intro-col h2 {
+		text-align: center;
+	}
+
+	.instagram {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.co-center-container {
+		margin-bottom: 20%;
+	}
+
+	.co-animation {
+	margin-left: 0px;
+}
+
+
+}
+
+
+.carousel-control.left {
+	background-image: none;
+}
+
+.carousel-control.right {
+	background-image: none;
+}
