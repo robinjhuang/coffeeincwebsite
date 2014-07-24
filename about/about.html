@@ -15,7 +15,8 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/default.css">
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
+		<title>About Coffee</title>
+		<link rel="shortcut icon" href="../img/coffeelogo.ico"/>
 </head>
 
 	
@@ -28,6 +29,7 @@
     <li class="animate"><a href="../home.html">Home<i class="fa fa-home float-right icondrop"></i></a></li>
     <li class="animate"><a href="../about/about.html">About<i class="fa fa-heart float-right icondrop"></i></a></li>
     <!-- <li class="animate"><a href="../jobs/jobs.html">Jobs<i class="fa fa-wrench float-right icondrop"></i></a></li>-->
+    <li class="animate"><a href="http://coffeetheapp.com/blog/">Blog<i class="fa fa-bookmark fa-fw float-right icondrop"></i></a></li>
     <li class="animate"><a href="../faq/faq.html">FAQ<i class="fa fa-question fa-fw float-right icondrop"></i></a></li> 
   </ul>
 </dropdown>
@@ -50,7 +52,7 @@
 		<div id="border"></div>
 		<div id="mission">
 		<h3>Our Mission</h3>
-		<p>Coffee aims to humanize the job & internship search process by allowing young professionals to network with real startup founders, hiring managers & other entry level employees. Ultimately we hope to connect the next generation of professionals & alleviate the unemployment epidemic in the USA.</p>
+		<p>Coffee aims to connect the next generation of professionals.</p>
 		</div>
 	</div>
 
@@ -87,7 +89,7 @@
 				<div class="profile-pic-wrapper"><img src="img/justin.png"></div>
 				<h4 class="title name">Justin de Guzman</h4>
 				<h5 class="title team">Lead Engineer</h5>
-				<p class="description">Justin is a full-stack developer. Justin has led teams of multiple engineers to build apps such as Brighten. He is a Computer Science & Math student at NYU slated to graduate in 2016. 
+				<p class="description">Justin is a full-stack developer. Justin has led teams of multiple engineers to build iOS and Android apps. He is a Computer Science & Math student at NYU slated to graduate in 2016. 
 				</p>
 
 			</li>
@@ -120,35 +122,45 @@
 			
 		</div>
 
-	<!-- </section>
+ 	</section>
+
+ 	<section>
 		<h5 class="center">Or</h5>
 		<h3 class="center">Talk to Us!</h3>
-		<form class="center" id="contact-form">
+	<!-- Got Code for Form from http://www.freecontactform.com-->	
+
+		<form class="center" id="contact-form" name="htmlform" method="post" action="html_form_send.php">
 			<div class="grid pad">
 				<div class="form-plant">
 					<p class="plant"></p>
 					<input type="hidden" name="email">
 
 					<div class="g-1-2 boxxy">
-						<input type="text" name="name" placeholder="Your Name">
+						<label for="first_name"></label>
+						<input type="text" name="first_name" placeholder="Your Name">
 					</div>
 					<div class="g-1-2 boxxy">
-						<input type="text" name="name" placeholder="Where can we email you back?">
+						<label for="email"></label>
+						<input type="text" name="email" placeholder="Where can we email you back?">
 					</div>
 					<div class="g-1 boxxy">
-						<textarea name="message" placeholder="What's on your mind?"></textarea>
+						<label for="comments"></label>
+						<textarea name="comments" maxlength = "1000" placeholder="What's on your mind?"></textarea>
 					</div>
-						<textarea name="comment" class="hidden" placeholder="Don't fill this out"></textarea>
-			</div> Form plant
-
-			<button type="submit" class="g submit">Send It</button>
+					<div id="submitbutton">
+						
+						<input type="submit" value = "Submit   " class="g submit"></input>
+					</div>
+			</div>
+			
 			</div>
 
 
 		</form>
-		
 
-	</section> -->
+	</section>	
+
+	
 
 
 
