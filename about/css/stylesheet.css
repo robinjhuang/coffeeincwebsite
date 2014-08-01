@@ -33,6 +33,9 @@ color: rgb(172, 213, 160);
 	border-color: transparent;
 	background-color: transparent;
 	padding-right: 0px;
+	font-weight: 100;
+	font-size: 14px;
+	font-family: 'Montserrat';
 }
 
 
@@ -349,6 +352,7 @@ h2.founder-title{
 
 .col-md-4 {
 	padding: 20px;
+	text-align: center;
 }
 
 .col-md-3 {
