@@ -1,145 +1,99 @@
+
 html {
 	font-size: 62.5%;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	
 }
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	
 }
 
 /* THIS IS FOR THE DROP DOWN MENU*/
-
-body > nav.header {
-	text-align: left;
+.navbar-default {
+	border-color: transparent;
+	background-color: transparent;
+	padding-right: 0px;
 }
 
-a {
-	text-decoration: none;
-	color: #666;
-}
-
-
-a:hover {
-text-decoration: none;
-color: rgb(172, 213, 160);
-}
-
-
-.header {
-	position: fixed;
-	margin-left: 84%;
-	float: right;
-	margin-top: 0.5%;
-	width: 100%;
-}
-
-.filler {
-	width: 50%;
-	height: 1px;
-}
-
-.float-right{
-  	float: right;
-}
-
-i.fa {
-	color: rgb(172, 213, 160);
-	cursor: pointer;
-	text-align: left;
-}
-
-i.icondrop {
-	margin-top: 5px;
-	vertical-align: bottom;
-}
-
-.header dropdown ul li a i {
-	font-size: 25px;
-}
-
-.animate a {
-	margin-right: 75px;
-}
-
-.fa{
-	margin-bottom: 10px;
- 	font-size: 2em;
-  	line-height: 5px !important;
-}
-
-dropdown{
-   display: inline-block;
-   /*margin: 20px 50px;*/ 
-   margin-top: 10px;
-   margin-right: 10px;
-   
-}
-dropdown label, dropdown ul li{
-clear: both;
-  display: block;
-  width: 200px;
-  background: transparent;
-  padding: 15px 20px;
-}
- dropdown label:hover dropdown ul li:hover{
-  background: rgb(172, 213, 160);
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-dropdown label{
-	float: right;
-	width: 50px;
-  color: rgb(172, 213, 160);
-  /*border-left: 4px solid #1ABC9C;*/
-  border-radius: 0 5px 0 0; 
-  position: relative;
-  
-  z-index: 2;
-}
-dropdown input{
-  display: none;
-}
-dropdown input ~ ul{
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-  top: -20px;
-  z-index: 1;
-  color: rgb(172, 213, 160);
-  font-weight: 400;
-}
-dropdown input:checked /* + label*/{
-  background: rgb(172, 213, 160);
-  color: white;
-}
-
-dropdown input:checked ~ ul{
-  visibility: visible;
-  opacity: 1;
-  top: 0;
-}
-$colors: #E74C3C, #0072B5, #2C3E50;
-
-@for $i from 1 through length($colors) {
-  dropdown ul li:nth-child(#{$i}) {
-    border-left: 4px solid nth($colors, $i);
-    .fa{
-      color: nth($colors, $i);
+@media (max-width: 1500px) {
+    .navbar-header {
+        float: none;
     }
-    &:hover {
-        background: nth($colors, $i);
-        color: white;
-      .fa{
-        color: white; 
-      }
+    .navbar-left,.navbar-right {
+        float: none !important;
     }
-  }
-}
+    .navbar-toggle {
+        display: block;
+        margin-right: 0px;
+    }
+
+    .icon-bar {
+    	color: green;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+
+	.navbar-default .navbar-toggle {
+		color: rgb(172, 213, 160);
+		border-color: transparent;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		text-align: right;
+		padding-right: 15px;
+	}
+	.navbar-default .navbar-collapse {
+		border: none;
+	}
+	
+
+		/* link */
+	.navbar-default .navbar-nav > li > a {
+	    color: rgb(172, 213, 160); /* THIS IS THE DROPDOWN ICONS */
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+	    color: rgb(205, 201, 200);
+	}
+
+	.navbar-default .navbar-toggle {
+	    border-color: none;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+	    background-color: transparent;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: rgb(172, 213, 160); /*THIS IS FOR THE DROPDOWN ICON*/
+	}
+
+	}
 
 .animate{
 	text-decoration: none;
@@ -174,7 +128,7 @@ h1 {
 	line-height: 72px;
 	font-weight: 100;
 	font-style: normal;
-	width: 810px;
+	
 	height: 72px;
 }
 
@@ -199,8 +153,7 @@ p {
 .questions-answer-block {
 	font-size: 20px;
 	text-align: left;
-	margin-left: 25px;
-	width: 600px;
+	
 }
 
 .question {
@@ -222,9 +175,7 @@ p {
 	color: #929292;
 	font-weight: 400;
 	font-size: 13px;
-	width: 600px;
 	margin-bottom: 15px;
-	margin-left: 2px;		
 }
 
 

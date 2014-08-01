@@ -11,7 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="css/bootstrap.css">
-		
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/default.css">
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
@@ -21,43 +21,53 @@
 
 	
 <body>
-<nav class = "header">
-		<dropdown>
-  <input id="toggle2" type="checkbox">
-  <label for="toggle2" class="animate"><i class="fa fa-list float-right"></i></label>
-  <ul class="animate">
-    <li class="animate"><a href="../home.html">Home<i class="fa fa-home float-right icondrop"></i></a></li>
-    <li class="animate"><a href="../about/about.html">About<i class="fa fa-heart float-right icondrop"></i></a></li>
-    <!-- <li class="animate"><a href="../jobs/jobs.html">Jobs<i class="fa fa-wrench float-right icondrop"></i></a></li>-->
-    <li class="animate"><a href="http://coffeetheapp.com/blog/">Blog<i class="fa fa-bookmark fa-fw float-right icondrop"></i></a></li>
-    <li class="animate"><a href="../faq/faq.html">FAQ<i class="fa fa-question fa-fw float-right icondrop"></i></a></li> 
-  </ul>
-</dropdown>
-	
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+
+	<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="coffeetheapp.com">Home</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="coffeetheapp.com/blog">Blog</a></li>
+        <li><a href="faq/faq.html">FAQ</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
 </nav>
 
 <div class="filler"> </div>
 	
 
 <div class="container">
-
+	<div class="row">
 	<h1>Our Story</h1>
 		<label class="animate circledown"><a class="smoothScroll" href="#founder-title"><i style="margin: 0 auto;" class="fa fa-chevron-circle-down"></i></a></label>
-	<div id="story">
-		<div id="column">
-		<div id="aboutcoffee">
-		<h3>About Coffee</h3>
-		<p>Coffee started from a conversation on Tinder with a young investment banker. The banker expressed the challenges she encountered when trying to casually meet other talented young professionals in New York City. Her number one gripe was the inability to tap these networks to receive information on up & coming companies that were offering employment. Directly after this conversation Nathan, CEO & Sawyer, CCO began to build Coffee.</p>
-		</div>
-		<div id="border"></div>
-		<div id="mission">
-		<h3>Our Mission</h3>
-		<p>Coffee aims to connect the next generation of professionals.</p>
-		</div>
-	</div>
-
-	</div><!--Story-->
 	
+		
+			<div id= "aboutcoffee"class="col-sm-4 col-sm-offset-1 col-xs-12">
+				<h3>About Coffee</h3>
+				<p>Coffee started from a conversation on Tinder with a young investment banker. The banker expressed the challenges she encountered when trying to casually meet other talented young professionals in New York City. Her number one gripe was the inability to tap these networks to receive information on up & coming companies that were offering employment. Directly after this conversation Nathan, CEO & Sawyer, CCO began to build Coffee.</p>
+			</div>
+			<div id="border"></div>
+			<div id="aboutcoffee" class="col-sm-4 col-xs-12">
+				<h3>Our Mission</h3>
+				<p>Coffee aims to connect the next generation of professionals.</p>
+			</div>
+		
+
+	
+	</div>
 	
 			<h2 id="founder-title" class="founder-title">The Founders</h2>
 	<div class="founder">
@@ -65,8 +75,8 @@
 		
 		
 		<div class="table">
-		<ul class="founder-grid">
-			<li class="founder-individual">
+		<ul class="founder-grid row">
+			<li class="col-md-3 col-sm-offset-1 col-xs-12">
 				<div class="profile-pic-wrapper"><img src="img/nathan.png"></div>
 				<h4 class="title name">Nathan Bernard</h4>
 				<h5 class="title team">CEO</h5>
@@ -76,7 +86,7 @@
 
 			</li>
 
-			<li class="founder-individual">
+			<li class="col-md-3 col-xs-12">
 				<div class="profile-pic-wrapper"><img src="img/sawyer.png"></div>
 				<h4 class="title name">Sawyer Xie</h4>
 				<h5 class="title team">CCO</h5>
@@ -85,7 +95,7 @@
 
 			</li>
 
-			<li class="founder-individual">
+			<li class="col-md-3 col-xs-12">
 				<div class="profile-pic-wrapper"><img src="img/justin.png"></div>
 				<h4 class="title name">Justin de Guzman</h4>
 				<h5 class="title team">Lead Engineer</h5>
@@ -154,10 +164,7 @@
 			</div>
 			
 			</div>
-
-
 		</form>
-
 	</section>	
 
 	
@@ -166,6 +173,7 @@
 
 </div> <!--Container-->
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/smoothscroll.js"></script>
 </body>
 

@@ -22,21 +22,106 @@ text-decoration: none;
 color: rgb(172, 213, 160);
 }
 
-/* THIS IS FOR THE DROP DOWN MENU*/
+/* THIS IS FOR THE NAV BAR*/
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+.navbar-default {
+	border-color: transparent;
+	background-color: transparent;
+	padding-right: 0px;
+}
+
+
+@media (max-width: 1500px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        margin-right: 0px;
+    }
+
+    .icon-bar {
+    	color: green;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+
+	.navbar-default .navbar-toggle {
+		color: rgb(172, 213, 160);
+		border-color: transparent;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		text-align: right;
+		padding-right: 15px;
+	}
+	.navbar-default .navbar-collapse {
+		border: none;
+	}
+	
+
+		/* link */
+	.navbar-default .navbar-nav > li > a {
+	    color: rgb(172, 213, 160); /* THIS IS THE DROPDOWN ICONS */
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+	    color: rgb(205, 201, 200);
+	}
+
+	.navbar-default .navbar-toggle {
+	    border-color: none;
+	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+	    background-color: transparent;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: rgb(172, 213, 160); /*THIS IS FOR THE DROPDOWN ICON*/
+	}
+
+	}
+
+
+
 .header {
 	position: fixed;
-	
 	margin-left: 84%;
 	float: right;
 	margin-top: 0.5%;
 	width: 100%;
-
 }
 
 .filler {
@@ -194,16 +279,6 @@ body h1 {
 	margin: auto;
 }
 
-#aboutcoffee {
-	float: left;
-	margin: 0 auto;
-	text-align: center;
-	width: 43%;
-	float: left;
-	min-height: 350px;
-	padding: 20px;
-}
-
 #mission {
 	margin: 0 auto;
 	text-align: center;
@@ -222,8 +297,8 @@ body h1 {
 	min-height: 256px;
 	border-left: 2px dotted;
 	border-color: #a49e93;
-	margin-left: 6.3%;
-	margin-right: 4%;
+	margin-left: 7.55%;
+	margin-right: 7.55%;
 	text-align: center;
 }
 }
@@ -258,7 +333,8 @@ h2.founder-title{
 	clear: both;
 	font-size: 4.5em;
 	text-align: center;
-	margin: 160px 0px 100px 0px	;
+	margin-top: 14.038%;
+	margin-bottom: 9.038%;
 	color: rgb(172, 213, 160);
 }
 
@@ -271,22 +347,26 @@ h2.founder-title{
 	list-style: none;
 }
 
-.founder .founder-individual {
-	margin-left: 8%;
-	display: inline-block;
+.col-md-4 {
+	padding: 20px;
+}
+
+.col-md-3 {
 	font-size: 16px;
-	margin-right: 1.25%;
-	width: 22.5%;
+	margin-right: 4.25%;
 	padding-bottom: 75px;
 	vertical-align: top;
 }
+
+
 
 .profile-pic-wrapper {
 	height: 190px; /* Used to be 63.3%*/
 	width: 190px;
 	overflow: hidden;
 	border-radius: 50%;
-	margin: 0 auto 23px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 	
 }
 
@@ -299,6 +379,8 @@ h2.founder-title{
 
 .description {
 	margin-top: 2%;
+	padding: 5px;
+	padding-left: 0px;
 }
 
 h4.name {
@@ -570,7 +652,7 @@ a.socialIcon:hover, .socialHoverClass {
 	background: transparent;
 }
 
-button.g {
+input.g {
 	display: inline-block;
 	zoom: 1;
 	letter-spacing: normal;
@@ -580,7 +662,7 @@ button.g {
 	cursor: pointer;
 }
 
-.submit {
+#submitbutton input {
 	position: relative;
 	z-index: 20;
 	border: none;
@@ -591,4 +673,39 @@ button.g {
 	text-transform: uppercase;
 	font-size: 20px;
 	margin: -70px auto 55px auto;
+}
+
+
+@media (max-width: 768px) {
+
+.col-xs-12 {
+	text-align: center;
+	padding: 25px;
+}
+
+#aboutcoffee p {
+	text-align: center;
+}
+
+#contact-form input {
+	width: 100%;
+	font-size: 16px;
+}
+
+#contact-form .boxxy {
+	width: 100%;
+	padding: 0px;
+}
+
+#contact-form .grid textarea {
+	font-size: 16px;
+	width: 100%;
+}
+
+#contact-form .submit {
+	width: 115px;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
 }
