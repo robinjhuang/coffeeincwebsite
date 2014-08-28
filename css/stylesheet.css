@@ -233,7 +233,6 @@ ul, menu {
 }
 
 a.temp {
-	margin-left: 50%;
 	display: inline;
 	color: rgb(172, 213, 160);
 	font-weight: 300;
@@ -259,6 +258,10 @@ a.temp {
 		text-align: center;
 	}
 
+	a.temp {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	
 	.co-center-container .col-sm-3 > * {
 		float: none;
