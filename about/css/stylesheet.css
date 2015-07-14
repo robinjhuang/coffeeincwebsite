@@ -149,7 +149,7 @@ i.icondrop {
 }
 
 .animate a {
-	margin-right: 75px;
+	margin-right: 15px;
 }
 
 .fa{
@@ -248,7 +248,9 @@ h1 {
 
 label.circledown {
 	text-align: center;
-	margin-left: 48.3%;
+	margin-left: 0 auto;
+	display: block;
+
 }
 
 /* THIS IS FOR THE DROP DOWN MENU ABOVE*/
